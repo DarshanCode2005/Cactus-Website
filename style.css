@@ -218,3 +218,86 @@ div.arrow{
     place-items: center;
     border-radius: 2.5rem;
 }
+
+div.news__section__card{
+    width: 180px;
+    height: 200px;
+    background-image: var(--gradient-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--first-color);
+    border-radius: 2.5rem;
+    justify-content: space-around;
+    /* row-gap: 1rem; */
+    padding: 0 0 2rem 0;
+
+}
+
+div.news__section__card img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: -3.5rem;
+    /* margin: none; */
+}
+
+div.news__section__card:nth-child(3){
+    height: 200px;
+    row-gap: .5rem;
+}
+
+div.news__section__card h3{
+    margin-bottom: 2rem;
+    /* display: relative; */
+    /* top: -2rem; */
+}
+
+section.news{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5rem 10rem;
+    column-gap: 2rem;
+}
+
+h3.news__section__heading{
+    font-size: var(--h1-font-size);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+div.news__section__cards{
+    
+    display: flex;
+    flex-direction: column;
+    /* width: 500px; */
+    justify-content: center;
+    /* background-color: red; */
+}
+
+div#card1{
+    
+    rotate: -10deg;
+}
+div#card2{
+    /* display: absolute; */
+    align-self: flex-end;
+    rotate: 10deg;
+}
+
+div#card3{
+    rotate: -10deg;
+    align-self: flex-start;
+}
+
+/* div.news__section__information{
+    display: grid;
+    place-items: center;
+    row-gap: 1rem; */
+    /* grid-template-rows: 100px 100px; */
+/* } */
+
+div.news__section__information{
+    margin-top: 200px;
+}
