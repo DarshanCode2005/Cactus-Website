@@ -1,1 +1,220 @@
-/* styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--body-color);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(93, 54%, 54%);
+  --first-color-alt: hsl(93, 50%, 48%);
+  --first-color-light: hsl(93, 58%, 66%);
+  --title-color: hsl(228, 8%, 98%);
+  --text-color: hsl(228, 8%, 70%);
+  --white-color: hsl(228, 8%, 98%);
+  --black-color: hsl(228, 6%, 4%);
+  --body-color: hsl(228, 6%, 8%);
+  --container-color: hsl(228, 6%, 12%);
+  --shadow-img: 0 0 48px hsla(93, 54%, 54%, .4);
+  --gradient-card: linear-gradient(180deg,
+                                hsla(93, 8%, 8%),
+                                hsla(93, 40%, 30%));
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.25rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+
+header.navbar{
+    height: 50px;
+    display: flex;
+    /* align-items: center;
+    grid-template-columns: max-content; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.image{
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 36px;
+    width: 36px; */
+}
+
+i.cactus{
+    color: var(--first-color);
+    font-size: 20px;
+    margin-right: .5rem;
+}
+
+nav.link-option{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.link-option a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    
+}
+
+nav.link-option a{
+    margin-left: 2.5rem;
+    margin-left: 2.5rem;
+    font-weight: bold;
+}
+
+nav.link-option:nth-child(1){
+    margin: none;
+}
+
+nav.link-option:nth-child(5){margin: none;}
+
+div.icon-shop a{
+    text-decoration: none;
+    color: white;
+    /* display: flex;
+    flex-direction: row;
+    column-gap: .5rem; */
+}
+
+div.icon-shop a:nth-child(1){
+    margin-right: .5rem;
+}
+
+section.main{
+    /* padding-block: 4rem 3rem; */
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+img.main-image{
+    height: 500px;
+    width: 400px;
+}
+
+h3.main__headline{
+    text-transform: uppercase;
+    font-size: var(--h1-font-size);
+    letter-spacing: 3px;
+    /* margin: none; */
+}
+
+div.main__information{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-rows: 120px 100px 100px;
+    width:300px;
+    /* row-gap: 2rem; */
+}
+
+span.color-green{
+    color: var(--first-color);
+}
+
+div.main__information p{
+    margin-top: 1rem;
+    font-size: var(--small-font-size);
+}
+
+div.main__info__button{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+div.main__info__button p{
+    text-decoration: underline;
+    font-weight: 1000;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+}
+
+div.button1{
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: .75rem;
+    font-weight: 1000;
+    column-gap: 1rem;
+    padding: 10px 20px;
+    border-radius: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.arrow{
+    background-color: var(--first-color);
+    height: 25px;
+    width: 25px;
+    display: grid;
+    place-items: center;
+    border-radius: 2.5rem;
+}
