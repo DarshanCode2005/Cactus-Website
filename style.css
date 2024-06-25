@@ -303,7 +303,7 @@ div.news__section__information{
 }
 
 section.section__shop{
-    padding:5rem 10rem;
+    padding:2rem 10rem;
 
 }
 
@@ -385,4 +385,37 @@ div.container__shop__items{
 
 div.container__items:hover div.container__image img{
     transform: translateY(-.5rem);
+}
+
+section.section_care_cactus{
+    padding: 5rem 10rem;
+}
+
+h1.section__title{
+    font-size: var(--h1-font-size);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+img.container_care_img{
+    height: 400px;
+    width: 350px;
+}
+
+div.container_care{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+ul.container_care_points{
+    display: grid;
+    row-gap: 1.5rem;
+    font-size: var(--small-font-size);
+}
+
+li.container_care_list_items{
+    list-style-type: none;
+    /* list-style-image: ; */
 }
